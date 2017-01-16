@@ -5,8 +5,25 @@
 {% block content %}
 
   <div class="container">
-    <h1>{{title}}</h1>
-    <h2>The sum is {{sum}}</h2>
+
+    <!-- USING NUNJUCKS!!!!  -->
+    {% for shoe in shoes %}
+    <!-- so we sent the renderObject.shoes info and are getting it here -->
+    <!-- <h1>this is data: {{shoe.name}}</h1> -->
+
+    <table>
+      <tr>
+        <th>picture</th>
+        <th>description</th>
+      </tr>
+      <tr>
+        <td>{{shoe.name}}</td>
+      </tr>
+
+    </table>
+    {% endfor %}
   </div>
+
+
 
 {% endblock %}
