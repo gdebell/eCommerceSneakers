@@ -6,3 +6,17 @@ body {
 a {
   color: #00B7FF;
 }
+
+img {
+  max-width: 200px;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.table {
+  display: inline-block;
+}
+.iteration {
+  display: flex;
+}
