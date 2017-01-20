@@ -4,22 +4,22 @@
 
 {% block content %}
 
-  <div class="container">
+  <div class='container'>
 
     <h1>Shoe</h1>
       {% for info in shoe %}
-        <div class="table">
-          <img src="{{info.image_url}}" alt="">
+        <div class='table'>
+          <img src="{{info.image_url}}" alt=''>
           <p>Price: ${{info.price}}</p>
         </div>
-        <div class="table">
+        <div class='table'>
           <p>Descript</p>
           <p>{{info.name}}</p>
           <p>{{info.size}}</p>
           <p>{{info.description}}</p>
           <p>{{info.condition}}</p>
-          <a href="url">Update</a><br/>
-          <button class="deleteShoe">Delete</button>
+          <a href='url'>Update</a><br/>
+          <button class='deleteShoe' data-id={{info.id}}>Delete</button>
         </div>
       {% endfor %}
     </div>

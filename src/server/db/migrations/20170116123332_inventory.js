@@ -1,12 +1,12 @@
 
 exports.up = function(knex, Promise) {
-  return knex.schema.createTable('sneaker_table', function(table){
-    table.increments('id')
+  return knex.schema.createTable('sneaker_table', function(table) {
+    table.increments('id');
     table.string('name').notNullable();
     table.double('price').notNullable();
     table.string('image_url').notNullable();
     table.text('description').notNullable();
-  })
+  });
 
 };
 

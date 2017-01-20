@@ -10,25 +10,22 @@
 
     <!-- USING NUNJUCKS!!!!  -->
     {% for shoe in shoes %}
-      <a href="thisShoe/{{shoe.id}}"><div class="iteration">
+      <a href="thisShoe/{{shoe.id}}">
+        <div class="iteration">
         <!-- so we sent the renderObject.shoes info and are getting it here -->
         <!-- <h1>this is data: {{shoe.name}}</h1> -->
-          <div class="table">
-                  <img src="{{shoe.image_url}}" alt="">
-                  <p>Price: ${{shoe.price}}</p>
-          </div>
-          <div class="table">
-            <p>Descript</p>
-              <p>{{shoe.name}}</p>
-              <p>{{shoe.size}}</p>
-              <p>{{shoe.description}}</p>
-              <p>{{shoe.condition}}</p>
-          </div>
-
-        </div></a>
+        <div class="table">
+          <img src="{{shoe.image_url}}" alt="">
+        </div>
+        <div class="table">
+          <h3>{{shoe.name}}</h3>
+          <p>Price: ${{shoe.price}}</p>
+          <p>Size: {{shoe.size}}</p>
+          <p>Decription: {{shoe.description}}</p>
+          <p>Condition: {{shoe.condition}}</p>
+        </div>
+        </div>
+      </a>
       {% endfor %}
     </div>
-
-
-
 {% endblock %}
