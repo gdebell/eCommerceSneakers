@@ -15,4 +15,17 @@ router.get('/:id', function (req, res, next) {
   })
 })
 
+router.delete('/:id', function (req, res, next) {
+  let id = parseInt(req.params.id);
+  knex("sneaker_table")
+  .del()
+  .where("id", id)
+  .select("id")
+  .returning("*")
+  .then((result) => {
+    console.log(result);
+    res.redirect('/');
+  })
+})
+
 module.exports = router;

@@ -1,5 +1,6 @@
-(function () {
+deleteShoe
 
-  console.log('sanity check!');
-
-})();
+$(document).on('click', '.deleteShoe', function () {
+  let tempId = document.getElementById('deleteId');
+  const id = parseInt(tempId);
+})
