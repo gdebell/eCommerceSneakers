@@ -6,28 +6,27 @@
 
   <div class="container">
 
-      <h1>Sneaker Couture</h1>
+    <h1>Sneaker Couture</h1>
 
-      <!-- USING NUNJUCKS!!!!  -->
-      {% for shoe in shoes %}
-        <div class="iteration">
-          <!-- so we sent the renderObject.shoes info and are getting it here -->
-          <!-- <h1>this is data: {{shoe.name}}</h1> -->
-            <div class="table">
-                    <img src="{{shoe.image_url}}" alt="">
-                    <p>Price: ${{shoe.price}}</p>
-            </div>
-
-            <div class="table">
-              <p>Descript</p>
-                  <p>{{shoe.name}}</p>
-                  <p>{{shoe.description}}</p>
-                  <p>{{shoe.condition}}</p>
-
-            </div>
-
+    <!-- USING NUNJUCKS!!!!  -->
+    {% for shoe in shoes %}
+      <a href="thisShoe/{{shoe.id}}"><div class="iteration">
+        <!-- so we sent the renderObject.shoes info and are getting it here -->
+        <!-- <h1>this is data: {{shoe.name}}</h1> -->
+          <div class="table">
+                  <img src="{{shoe.image_url}}" alt="">
+                  <p>Price: ${{shoe.price}}</p>
           </div>
-        {% endfor %}
+          <div class="table">
+            <p>Descript</p>
+              <p>{{shoe.name}}</p>
+              <p>{{shoe.size}}</p>
+              <p>{{shoe.description}}</p>
+              <p>{{shoe.condition}}</p>
+          </div>
+
+        </div></a>
+      {% endfor %}
     </div>
 
 
