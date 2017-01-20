@@ -10,84 +10,108 @@ exports.seed = function(knex, Promise) {
           name: 'GUCCI Ace embroidered low-top sneaker',
           price: 695.00,
           image_url: 'https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSCGy2lgSr0DUA6Jwj88jUJDv-yGJLDduExd-DW5aCjNUuePojhPJrvA6VBomfpVpkXtm8NuMw&usqp=CAE',
-          description: 'Gucci GG Blooms high-top sneaker  // Our high-top sneaker in our special edition Blooms print GG Supreme canvas. Blooms print GG Supreme canvas, a material with low environmental impact, with antique rose suede detail Gucci embossed eyelets Rubber sole with embossed Gucci logo at heel Flat Made in Italy This item will be delivered in our special edition GG Blooms packaging.'
+          description: 'Gucci GG Blooms high-top sneaker  // Our high-top sneaker in our special edition Blooms print GG Supreme canvas. Blooms print GG Supreme canvas, a material with low environmental impact, with antique rose suede detail Gucci embossed eyelets Rubber sole with embossed Gucci logo at heel Flat Made in Italy This item will be delivered in our special edition GG Blooms packaging.',
+          size: 14,
+          condition: "new"
         }),
         knex('sneaker_table').insert({
           id: 2,
-          name: 'GUCCI Ace embroidered low-top sneaker',
+          name: 'GUCCI Ace embroidered high-top-top sneaker',
           price: 690.00,
           image_url: 'https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcT1wAuZLaeaxQAhN092Zwvs0djr1cGUwUqr4K98lPIcbb2S1FKGubCetRZDlvC0gD10EcquY7Y&usqp=CAY',
-          description: 'Our classic low-top sneaker with an intricately designed floral embroidery that extends around the outside of the sneaker and ending with a back bow.'
+          description: 'Our classic low-top sneaker with an intricately designed floral embroidery that extends around the outside of the sneaker and ending with a back bow.',
+          size: 10,
+          condition: "new"
         }),
         knex('sneaker_table').insert({
           id: 3,
           name: 'Gucci Metallic leather and mink sneaker',
           price: 950.00,
           image_url: 'https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcToBsGWxZQqtokWrB_PKvaxoTOVAHe53UucovxEc6sWyO7l3fDeQBdLpqX_krRNT3IoKXFfqeJL&usqp=CAY',
-          description: 'Lug sole sneaker in metallic leather with a lace-up closure and mink pom-poms. The mix of materials, colors and textures adds a new dimension to our footwear collection, allowing the shoes to impact the overall look. Gold and silver metallic leather with green and red lurex Web Women\'s Metallic silver laces with purple mink pom-poms No tongue Black rubber lug sole Made in Italy'
+          description: 'Lug sole sneaker in metallic leather with a lace-up closure and mink pom-poms. The mix of materials, colors and textures adds a new dimension to our footwear collection, allowing the shoes to impact the overall look. Gold and silver metallic leather with green and red lurex Web Women\'s Metallic silver laces with purple mink pom-poms No tongue Black rubber lug sole Made in Italy',
+          size: 4.5,
+          condition: "new"
         }),
         knex('sneaker_table').insert({
           id: 4,
           name: 'GUCCI Ace embroidered low-top sneaker',
           price: 695.00,
           image_url: 'https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSCGy2lgSr0DUA6Jwj88jUJDv-yGJLDduExd-DW5aCjNUuePojhPJrvA6VBomfpVpkXtm8NuMw&usqp=CAE',
-          description: 'Gucci GG Blooms high-top sneaker  // Our high-top sneaker in our special edition Blooms print GG Supreme canvas. Blooms print GG Supreme canvas, a material with low environmental impact, with antique rose suede detail Gucci embossed eyelets Rubber sole with embossed Gucci logo at heel Flat Made in Italy This item will be delivered in our special edition GG Blooms packaging.'
+          description: 'Gucci GG Blooms high-top sneaker  // Our high-top sneaker in our special edition Blooms print GG Supreme canvas. Blooms print GG Supreme canvas, a material with low environmental impact, with antique rose suede detail Gucci embossed eyelets Rubber sole with embossed Gucci logo at heel Flat Made in Italy This item will be delivered in our special edition GG Blooms packaging.',
+          size: 8,
+          condition: "new"
         }),
         knex('sneaker_table').insert({
           id: 5,
           name: 'Gucci Leather low-top platform sneaker',
           price: 950.00,
           image_url: 'https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQrt9CTqr1_NX02EoFFgLSEOfDe_1vfxYmn6nxt5CMmryQjutxeUbPptspjzdDC1_7SCz8bwa8&usqp=CAY',
-          description: 'These metallic gold sneakers with a rainbow platform were shown on the Fall Winter runway. A striking take on the classic lace up pays homage to Gucci\'s roots with the blue/red Web. Metallic gold leather with blue/red Web stripe Red, yellow, green, blue and purple rainbow platform .5" heel height with 3.5" platform 4" total heel height Made in Italy'
+          description: 'These metallic gold sneakers with a rainbow platform were shown on the Fall Winter runway. A striking take on the classic lace up pays homage to Gucci\'s roots with the blue/red Web. Metallic gold leather with blue/red Web stripe Red, yellow, green, blue and purple rainbow platform .5" heel height with 3.5" platform 4" total heel height Made in Italy',
+          size: 12,
+          condition: "used"
         }),
         knex('sneaker_table').insert({
           id: 6,
           name: 'Prada Men\'s Leather & Mesh Sneakers - Oltremare',
           price: 595.00,
           image_url: 'https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSnst-L-xbTnwQO5TvIflWSoYaW69eVkeUaxm_Hi6jpHk5nhs4OykA9U0Fp66Pzht8r6z4Wn9M&usqp=CAE',
-          description: 'Fabulously designed shoes exude a sporty appeal. Leather/mesh upper. Lace-up closure. Leather lining. Rubber sole. Padded insole. Imported'
+          description: 'Fabulously designed shoes exude a sporty appeal. Leather/mesh upper. Lace-up closure. Leather lining. Rubber sole. Padded insole. Imported',
+          size: 4,
+          condition: "new"
         }),
         knex('sneaker_table').insert({
           id: 7,
           name: 'Leather Low Trainers Louis Vuitton Red Leather ',
           price: 4000.00,
           image_url: 'https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQeyB7lkMvYBg3Sa0uDoHehf1OEbTwKexH9qApgNKlHnPfONsQ8QSl9dbjzNux6Z48QsZWejP4&usqp=CAE',
-          description: 'Leather Low Trainers Louis Vuitton Red Leather'
+          description: 'Leather Low Trainers Louis Vuitton Red Leather',
+          size: 6,
+          condition: "new"
         }),
         knex('sneaker_table').insert({
           id: 8,
           name: 'Louis Vuitton Damier Ebene Savan Match Up Sneaker',
           price: 1250.00,
           image_url: 'https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcS2wo6qOscAEat_BQzZHW0JWDdgZorYu66UNVA3cUoCJTeq6yOFoTKWVZtqeg&usqp=CAE',
-          description: 'Louis Vuitton Damier Ebene Savan Match Up Sneaker Illustre100% Authentic Very Rare Hard to find Brand New In box Ships from USASize 8 in LV BUT FITS LIKE 9-9.5The clean.'
+          description: 'Louis Vuitton Damier Ebene Savan Match Up Sneaker Illustre100% Authentic Very Rare Hard to find Brand New In box Ships from USASize 8 in LV BUT FITS LIKE 9-9.5The clean.',
+          size: 10,
+          condition: "used"
         }),
         knex('sneaker_table').insert({
           id: 9,
           name: 'Louis Vuitton Navy Slip On Sneakers',
           price: 1550.00,
           image_url: 'https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSzLPJHAHykIap7zay_JdoGMON809QG4D_oMki1R5k_ZO2jQVzaBO_zvQAnFIs&usqp=CAE',
-          description: 'Great Condition/Authentic!! Size 6/Navy Blue. Comes with box and dust bag! I can send more pictures if needed! I will consider trades for other Louis Vuitton & Christian Louboutin items'
+          description: 'Great Condition/Authentic!! Size 6/Navy Blue. Comes with box and dust bag! I can send more pictures if needed! I will consider trades for other Louis Vuitton & Christian Louboutin items',
+          size: 8,
+          condition: "new"
         }),
         knex('sneaker_table').insert({
           id: 10,
           name: 'Louis Vuitton Women Boots',
           price: 763.33,
           image_url: ' https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRaHQfrnfpc3PDu9zttmYt0cgyXv6SC1JkmvP0zMXLlEimL2QH8U6yPO2R0QVCOehT5QVnF57Q&usqp=CAE',
-          description: 'Louis Vuitton boots  //  Authentic Louis Vuitton boots. These retailed for 4,700$ plus tax. Only 5 pairs were made. Size 39. no trades  //  $2,300.00 used'
+          description: 'Louis Vuitton boots  //  Authentic Louis Vuitton boots. These retailed for 4,700$ plus tax. Only 5 pairs were made. Size 39. no trades  //  $2,300.00 used',
+          size: 8,
+          condition: "used"
         }),
         knex('sneaker_table').insert({
           id: 11,
           name: '35 Louis Vuitton Bahia Brazil Black Patch ',
           price: 650.00,
           image_url: 'https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTZ8OMSqiMZHSk-ldC-z2XdrYVfWoAsJJtQcKvLvTeaPaP7AiN0c46OoFX9Sl7AafQPN-Cmfzl7&usqp=CAE',
-          description: 'You are viewing a pair of Authentic Louis Vuitton shoes Size 35euro Sold out nationwide! Price is above retail since I\'m subject to fees Style name: 2016 Checkpoint Desert '
+          description: 'You are viewing a pair of Authentic Louis Vuitton shoes Size 35euro Sold out nationwide! Price is above retail since I\'m subject to fees Style name: 2016 Checkpoint Desert',
+          size: 12,
+          condition: "used"
         }),
         knex('sneaker_table').insert({
           id: 12,
           name: 'Louis Vuitton Women Black Leather Boots.',
           price: 1194.03,
           image_url: 'https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcReUA6qyuPlRnIMYR2FW4uJ_QdY_iFOwB3J73rSfEmAV9O0DcEVPES3ZzWp04Q9cOPokV2ikrnD&usqp=CAE',
-          description: 'Black Leather Boots Louis Vuitton Black Leather'
+          description: 'Black Leather Boots Louis Vuitton Black Leather',
+          size: 8,
+          condition: "new"
         })
         ])
     });
