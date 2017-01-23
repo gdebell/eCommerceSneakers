@@ -37,8 +37,7 @@ router.delete('/:id/delete', function (req, res, next) {
 router.get('/:id/update', function(req, res, next) {
   // let id = req.params.id;
   res.render('updateShoe');
-})
-
+});
 
 router.post('/:id/update', function(req, res, next) {
   let id = parseInt(req.params.id);

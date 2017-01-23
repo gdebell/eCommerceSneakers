@@ -13,7 +13,32 @@ router.get('/', function (req, res, next) {
     //we send renderObject in our response, after the view file
     res.render('index', renderObject);
   });
+});
 
+router.get('/newShoe', function (req, res, next) {
+  res.render('newShoe');
+});
+
+router.post('/newShoe', function (req, res, next) {
+  knex('sneaker_table')
+  .insert({
+    name: req.body.name,
+    price: req.body.price,
+    image_url: req.body.image_url,
+    description: req.body.description,
+    size: req.body.size,
+    condition: req.body.condition
+  })
+  .select('*')
+  .returning('*')
+  .then(() => {
+    console.log('hey');
+    res.redirect('/');
+  })
+  .catch((err) => {
+    console.log(err);
+    return next(err);
+  });
 });
 
 module.exports = router;
