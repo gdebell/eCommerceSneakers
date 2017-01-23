@@ -34,4 +34,33 @@ router.delete('/:id/delete', function (req, res, next) {
   });
 });
 
+router.get('/:id/update', function(req, res, next) {
+  // let id = req.params.id;
+  res.render('updateShoe');
+})
+
+
+router.post('/:id/update', function(req, res, next) {
+  let id = parseInt(req.params.id);
+  knex('sneaker_table')
+  .where('id', id)
+  .update({
+    name: req.body.name,
+    price: req.body.price,
+    image_url: req.body.image_url,
+    description: req.body.description,
+    size: req.body.size,
+    condition: req.body.condition
+  })
+  .select('*')
+  .returning('*')
+  .then(() => {
+    res.render('/');
+  })
+  .catch((err) => {
+    console.log(err);
+    return next(err);
+  });
+});
+
 module.exports = router;
