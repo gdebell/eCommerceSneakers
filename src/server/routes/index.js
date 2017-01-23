@@ -30,7 +30,6 @@ router.post('/newShoe', function (req, res, next) {
     condition: req.body.condition
   })
   .select('*')
-  .returning('*')
   .then(() => {
     console.log('hey');
     res.redirect('/');

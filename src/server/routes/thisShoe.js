@@ -21,7 +21,6 @@ router.delete('/:id/delete', function (req, res, next) {
   .del()
   .where('id', id)
   .select('id')
-  .returning('*')
   .then(() => {
     console.log('delete was successful!');
     res.send({
@@ -52,7 +51,6 @@ router.post('/:id/update', function(req, res, next) {
     condition: req.body.condition
   })
   .select('*')
-  .returning('*')
   .then(() => {
     res.render('/');
   })
