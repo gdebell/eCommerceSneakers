@@ -7,6 +7,7 @@
   <div class='container'>
 
     <h1>Shoe</h1>
+
       {% for info in shoe %}
         <div class='table'>
           <img src="{{info.image_url}}" alt=''>
@@ -18,7 +19,7 @@
           <p>{{info.size}}</p>
           <p>{{info.description}}</p>
           <p>{{info.condition}}</p>
-          <a href='/thisShoe/{{info.id}}/update'>Update</a><br/>
+          <a href='/thisShoe/{{info.id}}/update'><button>Update</button></a><br/>
           <button class='deleteShoe' data-id={{info.id}}>Delete</button>
         </div>
       {% endfor %}
