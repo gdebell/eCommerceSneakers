@@ -34,8 +34,10 @@ router.delete('/:id/delete', function (req, res, next) {
 });
 
 router.get('/:id/update', function(req, res, next) {
-  // let id = req.params.id;
-  res.render('updateShoe');
+  let id = req.params.id;
+  let renderObject = {};
+  renderObject.data = id;
+  res.render('updateShoe', renderObject);
 });
 
 router.post('/:id/update', function(req, res, next) {
@@ -52,7 +54,7 @@ router.post('/:id/update', function(req, res, next) {
   })
   .select('*')
   .then(() => {
-    res.render('/');
+    res.redirect('/');
   })
   .catch((err) => {
     console.log(err);
