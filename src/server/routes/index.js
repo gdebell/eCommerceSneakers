@@ -5,6 +5,9 @@ const knex = require('../db/knex');
 const indexController = require('../controllers/index');
 
 router.get('/', function (req, res, next) {
+
+
+
   return knex('sneaker_table')
   .then(function(data) {
     //renderObject is carrying our data to the front end
