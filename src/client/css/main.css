@@ -1,5 +1,5 @@
 body {
-  padding: 50px;
+  width: 100%
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
@@ -70,3 +70,28 @@ a {
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {display:block;}
+
+
+.splashImage {
+  width: 100%;
+  height: 100%;
+  display: show;
+}
+
+.test {
+  background-image: url(../css/images/logo.jpeg);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*background-size: cover;*/
+}
+
+/*html {
+  background-image: url(../css/images/logo.jpeg) no-repeat center center fixed;
+  background-size: cover;
+}*/
+/*<image class="splashImage" src="../css/images/logo.jpeg">*/

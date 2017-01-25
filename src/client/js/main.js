@@ -15,32 +15,30 @@ $(document).on('click', '.deleteShoe', function () {
   });
 });
 
-$(document).on('click', '.sortHighToLow', function(){
-  console.log("clicked sortshoes");
+$(document).on('click', '.sortHighToLow', function() {
+  console.log('clicked sortshoes');
   $.ajax({
     type: 'GET',
     url: `/highToLow`
-  })
-})
+  });
+});
 
-$(document).on('click', '.sortlowToHigh', function(){
-  console.log("clicked sortshoes");
+$(document).on('click', '.sortlowToHigh', function() {
+  console.log('clicked sortshoes');
   $.ajax({
     type: 'GET',
     url: `/lowToHigh`
-  })
-})
-
+  });
+});
 //this myFunction is the dropdown sorting menu
 function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
+  document.getElementById('myDropdown').classList.toggle('show');
 }
-
 // Close the dropdown menu if the user clicks outside of it
 window.onclick = function(event) {
   if (!event.target.matches('.dropbtn')) {
 
-    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var dropdowns = document.getElementsByClassName('dropdown-content');
     var i;
     for (i = 0; i < dropdowns.length; i++) {
       var openDropdown = dropdowns[i];
@@ -49,4 +47,4 @@ window.onclick = function(event) {
       }
     }
   }
-}
+};

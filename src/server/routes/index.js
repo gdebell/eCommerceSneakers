@@ -40,26 +40,26 @@ router.post('/newShoe', function (req, res, next) {
   });
 });
 
-router.get('/lowToHigh', function(req, res, next){
+router.get('/lowToHigh', function(req, res, next) {
   return knex('sneaker_table')
   .select('*')
   .orderBy('price')
-  .then(function(data){
+  .then(function(data) {
     const renderObject = {};
     renderObject.shoes = data;
     res.render('index', renderObject);
-  })
+  });
 });
 
-router.get('/highToLow', function(req, res, next){
+router.get('/highToLow', function(req, res, next) {
   return knex('sneaker_table')
   .select('*')
   .orderBy('price', 'desc')
-  .then(function(data){
+  .then(function(data) {
     const renderObject = {};
     renderObject.shoes = data;
     res.render('index', renderObject);
-  })
+  });
 });
 
 module.exports = router;
