@@ -8,6 +8,15 @@
 
     <h1>Sneaker Couture</h1>
     <a href="/newShoe"><button>New Shoe</button></a>
+    <div class="dropdown">
+      <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+      <div id="myDropdown" class="dropdown-content">
+        <a href="lowToHigh">You a Scrub</a>
+        <a href="highToLow">Rich BEEEOOTCHH</a>
+      </div>
+    </div>
+
+
     <!-- USING NUNJUCKS!!!!  -->
     {% for shoe in shoes %}
       <a href="thisShoe/{{shoe.id}}">
