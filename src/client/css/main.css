@@ -72,13 +72,7 @@ a {
 .show {display:block;}
 
 
-.splashImage {
-  width: 100%;
-  height: 100%;
-  display: show;
-}
-
-.test {
+.splashDiv {
   background-image: url(../css/images/logo.jpeg);
   position: fixed;
   top: 0;

@@ -48,3 +48,10 @@ window.onclick = function(event) {
     }
   }
 };
+
+
+$(document).ready(function(){
+  $(window).scroll(function(){
+    $('.splashDiv').fadeOut();
+  })
+})
