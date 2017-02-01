@@ -47,18 +47,20 @@ window.onclick = function(event) {
     }
   }
 };
-//this will change the number of shoes displayed (width) on the landing page
-$('.changeIterationThree').on('click', function() {
-  $('.iteration').css('width', '33%');
-});
-
-$('.changeIterationFive').on('click', function() {
-  $('.iteration').css('width', '20%');
-});
 
 //while display gold shoe when you hit landing page
 $(document).ready(function() {
   $(window).scroll(function() {
     $('.splashDiv').fadeOut();
+  });
+  //this will change the number of shoes displayed (width) on the landing page
+  $('.changeIterationThree').on('click', function() {
+    $('.iteration').css('width', '33%');
+    $('.info').show();
+  });
+
+  $('.changeIterationFive').on('click', function() {
+    $('.iteration').css('width', '20%');
+    $('.info').hide();
   });
 });
