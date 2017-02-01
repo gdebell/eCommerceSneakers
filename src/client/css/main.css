@@ -5,7 +5,7 @@ body {
 
 a {
   text-decoration: none;
-  color: #00B7FF;
+  color: #666;
 }
 
 img {
@@ -19,6 +19,7 @@ img {
 
 .iteration {
   box-sizing: border-box;
+  padding: 2rem;
   width: 33%;
 }
 
@@ -65,7 +66,6 @@ img {
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {display:block;}
-
 
 .splashDiv {
   background-image: url(../css/images/logo.jpeg);

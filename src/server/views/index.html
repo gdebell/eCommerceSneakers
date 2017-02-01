@@ -3,7 +3,8 @@
 {% block title %}{% endblock %}
 
 {% block content %}
-
+<div class="splashDiv">
+</div>
 <header>
   <h1>Sneaker Couture</h1>
     <a href="/newShoe"><button>New Shoe</button></a>
@@ -24,11 +25,13 @@
   <section class="iteration">
     <a href="thisShoe/{{shoe.id}}">
     <img src="{{shoe.image_url}}" alt="">
-    <h3>{{shoe.name}}</h3>
-    <p>Price: ${{shoe.price}}</p>
-    <p>Size: {{shoe.size}}</p>
-    <p>Decription: {{shoe.description}}</p>
-    <p>Condition: {{shoe.condition}}</p>
+    <div class="info">
+      <h3>{{shoe.name}}</h3>
+      <p>Price: ${{shoe.price}}</p>
+      <p>Size: {{shoe.size}}</p>
+      <p>Decription: {{shoe.description}}</p>
+      <p>Condition: {{shoe.condition}}</p>
+    </div>
     </a>
   </section>
 {% endfor %}
