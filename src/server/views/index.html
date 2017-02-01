@@ -4,39 +4,32 @@
 
 {% block content %}
 
-  <div class="splashDiv" id="splashDiv">
-  </div>
-
-
-  <div class="container">
-    <h1>Sneaker Couture</h1>
+<header>
+  <h1>Sneaker Couture</h1>
     <a href="/newShoe"><button>New Shoe</button></a>
-    <div class="dropdown">
-      <button onclick="myFunction()" class="dropbtn">Dropdown</button>
-      <div id="myDropdown" class="dropdown-content">
-        <a href="lowToHigh">You a Scrub</a>
-        <a href="highToLow">Rich BEEEOOTCHH</a>
-      </div>
+  <div class="dropdown">
+    <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+    <div id="myDropdown" class="dropdown-content">
+      <a href="lowToHigh">You a Scrub</a>
+      <a href="highToLow">Rich BEEEOOTCHH</a>
     </div>
+  </div>
+</header>
 
-    <!-- USING NUNJUCKS!!!!  -->
-    {% for shoe in shoes %}
-      <a href="thisShoe/{{shoe.id}}">
-        <div class="iteration">
-        <!-- so we sent the renderObject.shoes info and are getting it here -->
-        <!-- <h1>this is data: {{shoe.name}}</h1> -->
-        <div class="table">
-          <img src="{{shoe.image_url}}" alt="">
-        </div>
-        <div class="table">
-          <h3>{{shoe.name}}</h3>
-          <p>Price: ${{shoe.price}}</p>
-          <p>Size: {{shoe.size}}</p>
-          <p>Decription: {{shoe.description}}</p>
-          <p>Condition: {{shoe.condition}}</p>
-        </div>
-        </div>
-      </a>
-      {% endfor %}
-    </div>
+<!-- USING NUNJUCKS!!!!  -->
+<div class="container">
+{% for shoe in shoes %}
+  <section class="iteration">
+    <a href="thisShoe/{{shoe.id}}">
+    <img src="{{shoe.image_url}}" alt="">
+    <h3>{{shoe.name}}</h3>
+    <p>Price: ${{shoe.price}}</p>
+    <p>Size: {{shoe.size}}</p>
+    <p>Decription: {{shoe.description}}</p>
+    <p>Condition: {{shoe.condition}}</p>
+    </a>
+  </section>
+{% endfor %}
+</div>
+
 {% endblock %}
