@@ -37,7 +37,6 @@ function myFunction() {
 // Close the dropdown menu if the user clicks outside of it
 window.onclick = function(event) {
   if (!event.target.matches('.dropbtn')) {
-
     var dropdowns = document.getElementsByClassName('dropdown-content');
     var i;
     for (i = 0; i < dropdowns.length; i++) {
@@ -48,10 +47,18 @@ window.onclick = function(event) {
     }
   }
 };
+//this will change the number of shoes displayed (width) on the landing page
+$('.changeIterationThree').on('click', function() {
+  $('.iteration').css('width', '33%');
+});
 
+$('.changeIterationFive').on('click', function() {
+  $('.iteration').css('width', '20%');
+});
 
-$(document).ready(function(){
-  $(window).scroll(function(){
+//while display gold shoe when you hit landing page
+$(document).ready(function() {
+  $(window).scroll(function() {
     $('.splashDiv').fadeOut();
-  })
-})
+  });
+});
