@@ -79,6 +79,19 @@ img {
   /*background-size: cover;*/
 }
 
+/*.noInfo:hover {
+  background-color: yellow;
+
+}*/
+
+.hoverName {
+  opacity: 0;
+}
+/*.hoverShow {
+  opacity: 1;
+}*/
+
+
 /*html {
   background-image: url(../css/images/logo.jpeg) no-repeat center center fixed;
   background-size: cover;

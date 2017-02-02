@@ -50,6 +50,7 @@ window.onclick = function(event) {
 
 //while display gold shoe when you hit landing page
 $(document).ready(function() {
+  $('.hoverName').hide();
   $(window).scroll(function() {
     $('.splashDiv').fadeOut();
   });
@@ -57,10 +58,24 @@ $(document).ready(function() {
   $('.changeIterationThree').on('click', function() {
     $('.iteration').css('width', '33%');
     $('.info').show();
+    $('.hoverName').hide();
+    $('.iteration').removeClass('noInfo')
   });
 
   $('.changeIterationFive').on('click', function() {
+    $('.hoverName').show();
     $('.iteration').css('width', '20%');
     $('.info').hide();
+    $('.iteration').addClass('noInfo')
+    // $('.hoverName').hide()
+    // $('.hoverName:hover').show()
+
+    $('.noInfo').hover(function(){
+      $(".hoverName",this).css("opacity", '1');}, function(){
+        $(".hoverName",this).css("opacity", '0');
+      });
+
+
+
   });
 });
