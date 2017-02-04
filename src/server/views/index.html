@@ -5,18 +5,23 @@
 {% block content %}
 <div class="splashDiv">
 </div>
+
 <header>
-  <h1>Sneaker Couture</h1>
-    <a href="/newShoe"><button>New Shoe</button></a>
-    <button class="changeIterationThree">- - -</button>
-    <button class="changeIterationFive">- - - - -</button>
-  <div class="dropdown">
-    <button onclick="myFunction()" class="dropbtn">Dropdown</button>
-    <div id="myDropdown" class="dropdown-content">
-      <a href="lowToHigh">You a Scrub</a>
-      <a href="highToLow">Rich BEEEOOTCHH</a>
-    </div>
+  <div class="title">
+    <h1>Sneaker Couture</h1>
   </div>
+  <nav>
+    <a href="/newShoe"><button>New Shoe</button></a>
+    <button class="changeIterationThree"><i class="fa fa-th-large" aria-hidden="true"></i></button>
+    <button class="changeIterationFive"><i class="fa fa-th" aria-hidden="true"></i></button>
+    <div class="dropdown">
+      <button onclick="myFunction()" class="dropbtn">Search</button>
+      <div id="myDropdown" class="dropdown-content">
+        <a href="lowToHigh">Low to High</a>
+        <a href="highToLow">High to Low</a>
+      </div>
+    </div>
+  </nav>
 </header>
 
 <!-- USING NUNJUCKS!!!!  -->

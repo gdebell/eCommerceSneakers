@@ -3,6 +3,16 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
+nav {
+  float: right;
+}
+
+.title {
+  display: inline-block;
+  letter-spacing: 20px;
+  font-family: 'Cinzel', serif;
+}
+
 a {
   text-decoration: none;
   color: #666;
@@ -12,10 +22,24 @@ img {
   max-width: 200px;
 }
 
+header {
+  background-color: grey;
+  padding: 5%
+}
+
+.info {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+h3 {
+  font-family: 'Playfair Display SC', serif;
+}
+
 .container {
   display: flex;
   flex-wrap: wrap;
   padding: 1rem;
+  clear: both;
 }
 
 .iteration {
