@@ -15,11 +15,12 @@ img {
 .container {
   display: flex;
   flex-wrap: wrap;
+  padding: 1rem;
 }
 
 .iteration {
   box-sizing: border-box;
-  padding: 2rem;
+  padding: 4rem;
   width: 33%;
 }
 
@@ -76,27 +77,22 @@ img {
   right: 0;
   background-repeat: no-repeat;
   background-size: cover;
-  /*background-size: cover;*/
 }
-
-/*.noInfo:hover {
-  background-color: yellow;
-
-}*/
 
 .hoverName {
   opacity: 0;
 }
 
+@media screen and (max-width: 800px) {
+  .iteration {
+    padding: 2.5rem;
+    width: 50%;
+  }
+}
 
-
-/*.hoverShow {
-  opacity: 1;
-}*/
-
-
-/*html {
-  background-image: url(../css/images/logo.jpeg) no-repeat center center fixed;
-  background-size: cover;
-}*/
-/*<image class="splashImage" src="../css/images/logo.jpeg">*/
+@media screen and (max-width: 500px) {
+  .iteration {
+    padding: 2rem;
+    width: 100%;
+  }
+}
