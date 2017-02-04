@@ -7,6 +7,28 @@ nav {
   float: right;
 }
 
+.fa {
+  border: 1px solid #555;
+  border-radius: 1rem;
+}
+
+button {
+  width: 66px;
+  height: 66px;
+  border: 1px solid #555;
+  border-radius: 1rem;
+  background-color: transparent;
+}
+
+.fa, button {
+  color: #222;
+  padding: .5rem;
+}
+
+.navB {
+  vertical-align: top;
+}
+
 .title {
   display: inline-block;
   letter-spacing: 20px;
@@ -23,8 +45,8 @@ img {
 }
 
 header {
-  background-color: grey;
-  padding: 5%
+  background-color: #f3f3f5;
+  padding: 2%;
 }
 
 .info {
@@ -49,17 +71,12 @@ h3 {
 }
 
 .dropbtn {
-    background-color: #4CAF50;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
+    background-color: transparent;
+    color: #222;
+    padding: auto;
     cursor: pointer;
-}
-
-/* Dropdown button on hover & focus */
-.dropbtn:hover, .dropbtn:focus {
-    background-color: #3e8e41;
+    border: 1px solid #555;
+    border-radius: 1rem;
 }
 
 /* The container <div> - needed to position the dropdown content */
@@ -107,14 +124,36 @@ h3 {
   opacity: 0;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 920px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .title {
+    width: 50%;
+  }
+
   .iteration {
     padding: 2.5rem;
     width: 50%;
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 585px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  header {
+    height: 220px;
+  }
+
+  nav {
+    width: 100%;
+  }
+
+  .navB {
+  }
+
   .iteration {
     padding: 2rem;
     width: 100%;
