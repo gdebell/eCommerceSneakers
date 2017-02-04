@@ -100,6 +100,38 @@ exports.seed = function(knex, Promise) {
           description: 'Black Leather Boots Louis Vuitton Black Leather',
           size: 8,
           condition: 'new'
+        }),
+        knex('sneaker_table').insert({
+          name: 'Alexander McQueen Sneake Pelle S.Gomma',
+          price: 1940.00,
+          image_url: 'http://a3.zassets.com/images/z/3/7/1/9/5/3/3719537-p-MULTIVIEW.jpg',
+          description: 'Women\'s Hook and Loop Shoes Black/Multi/Red/Ivory',
+          size: 6,
+          condition: 'new'
+        }),
+        knex('sneaker_table').insert({
+          name: 'Valentino Men\'s Camouflage Rockrunner Sneakers-navy',
+          price: 845.00,
+          image_url: 'https://product-images.barneys.com/is/image/Barneys/504592408_1_ShoeSide?$pdp_flexH$',
+          description: 'Slip-resistant sneakers with stud-molded heel rim Calf leather upper Lace-up style Nylon lining Rubber sole Padded insole Made in Italy. Men\'s Shoes - Designer Shoes.',
+          size: 10.5,
+          condition: 'new'
+        }),
+        knex('sneaker_table').insert({
+          name: 'Yeezy boost 350 Pirate Black',
+          price: 2200.00,
+          image_url: 'https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRlXel8sebFBkXU9AeE9h76jPEehmv0zjqlo6zKcG2B5ngxue5Sp6FiTZajpXIX_jaTpVoMPJE&usqp=CAE',
+          description: 'The crystals are about half to a quarter of the size of our 20ss crystal and the detail is immaculate. The crystals are very small and the detail is very uniform. 7ss - This is the next size smaller than our 9/10ss crystal size. The crystals are very tiny and the detail is very pristine and the detail is crisp and uniform. It would be compared to a masterpiece.5ss - This is the smallest size crystal available. The detail is impeccable!',
+          size: 9,
+          condition: 'new'
+        }),
+        knex('sneaker_table').insert({
+          name: 'Christian Louboutin Men\'s Spiked Dandelion Venetian Loafers-black',
+          price: 1395.00,
+          image_url: 'http://product-images.barneys.com/is/image/Barneys/504522877_1_ShoeSide?$zoom_flex$',
+          description: 'Christian Louboutin United States Official Online Boutique - Dandelion Spikes Flat Black/Black Leather available online.',
+          size: 13,
+          condition: 'new'
         })
       ]);
     });
